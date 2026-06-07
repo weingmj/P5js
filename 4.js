@@ -62,3 +62,11 @@ function draw() {
     circle(300, 200, expSize * 0.7);
   }
 }
+
+// 화면을 클릭했을 때 실행되는 함수
+function mousePressed() {
+  // 변수들을 최초 선언 시의 값으로 강제 초기화하여 애니메이션 재시작
+  missileY = -300;
+  isHit = false;
+  hitTime = 0;
+}
