@@ -6,7 +6,7 @@ function setup() {
   createCanvas(600, 400);
   colorMode(RGB);
   // 전체 진행이 느려졌으므로 녹화 시간을 7초로 연장
-  saveGif('assignment4', 7);
+  //saveGif('assignment4', 7); //gif 저장 생략
 }
 
 function draw() {
