@@ -63,10 +63,11 @@ function draw() {
   }
 }
 
-// 화면을 클릭했을 때 실행되는 함수
 function mousePressed() {
-  // 변수들을 최초 선언 시의 값으로 강제 초기화하여 애니메이션 재시작
-  missileY = -300;
-  isHit = false;
-  hitTime = 0;
+  // 미사일이 바닥에 닿은(isHit이 true인) 상태에서만 재시작 허용
+  if (isHit) {
+    missileY = -300;
+    isHit = false;
+    hitTime = 0;
+  }
 }
